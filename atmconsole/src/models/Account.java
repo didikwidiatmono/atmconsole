@@ -5,14 +5,8 @@ public class Account {
 	private int balance;
 	private Owe hasOwe;
 	private Claim hasClaim;
+	private int isLogin;
 	
-	public Account(String name, int balance, Owe hasOwe, Claim hasClaim) {
-		this.name = name;
-		this.balance = balance;
-		this.hasOwe = hasOwe;
-		this.hasClaim = hasClaim;
-	}
-
 	public String getName() {
 		return name;
 	}
@@ -43,6 +37,14 @@ public class Account {
 
 	public void setHasClaim(Claim hasClaim) {
 		this.hasClaim = hasClaim;
+	}
+
+	public int getIsLogin() {
+		return isLogin;
+	}
+
+	public void setIsLogin(int isLogin) {
+		this.isLogin = isLogin;
 	}
 	
 	
